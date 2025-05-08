@@ -1,0 +1,8 @@
+<div class="grid grid-rows-layout min-h-screen">
+    <app-navbar></app-navbar>
+    <div class="flex-grow w-full px-4 sm:px-6 lg:px-8">
+        <router-outlet></router-outlet>
+    </div>
+    <app-footer class="w-full mt-auto" [visitorCount]="visitorCount()" [isVisitorCountLoading]="isVisitorCountLoading()"
+        [visitorCountError]="visitorCountError()"></app-footer>
+</div>
